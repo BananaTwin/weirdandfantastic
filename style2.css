@@ -1,0 +1,74 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background: url("media/landing.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+header {
+  background-color: rgba(164, 161, 156, 0.3);
+}
+
+
+.text-uppercase {
+  color: rgb(71, 69, 65);
+  text-decoration: underline;
+  text-decoration-color: #rgb(71, 69, 65);
+  font-size: 5em;
+}
+
+.text-uppercase:hover {
+  color: rgb(31, 29, 24);
+  text-decoration-color: rgb(31, 29, 24);
+}
+
+p {
+  color: white;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+hr {
+  border-color: orange;
+  width:5px;
+  max-width: 100px;
+}
+.buffer {
+  height: 50px;
+}
+
+.btn-outline-secondary {
+  background-color: rgb(77, 56, 123);
+  font-size:3em;
+}
+
+.btn-outline-secondary:hover {
+  background-color: rgb(50, 29, 95);
+  font-size:3.1em;
+}
+
+a {
+color: rgb(50, 29, 95);
+
+}
+a:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  text-emphasis-style: filled;
+  color: rgb(77, 56, 123);
+}
+
+
+
+/*
+body {
+background-image: url ("potternight.jpg");
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+*/

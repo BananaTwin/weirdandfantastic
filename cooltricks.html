@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Me </title>
+        <!-- Meta Tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Stylesheet-->
+          <link rel = "stylesheet" href = "style.css">
+        <!-- Google fonts -->
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    </head>
+  </head>
+  <body>
+    <div class = "navbar">
+  	<a href = "homepage.html">Home</a>
+  	<a href = "aboutme.html">About Me</a>
+  	<a href = "schoolevents.html">School Events</a>
+  	<a href = "imagegallery.html">Image Gallery</a>
+  	<a href = "cooltricks.html">Cool Tricks</a>
+    <a href = "FAQ.html">FAQ</a>
+  	</div>
+
+<h1> Click on the piano keys to make a sound! </h1>
+      <div class = "blackkeys">
+              <a onclick="PianoSound('c1')">
+                <img src="media/blackkey.png">
+              </a>
+
+              <a onclick="PianoSound('d1')">
+                <img src="media/blackkey.png">
+              </a>
+
+              <a onclick="PianoSound('e')">
+                <img src="media/blackkey.png">
+              </a>
+
+              <a onclick="PianoSound('f')">
+                <img src="media/blackkey.png">
+              </a>
+
+              <a onclick="PianoSound('a1')">
+                <img src="media/blackkey.png">
+              </a>
+
+              <a onclick="PianoSound('c2')">
+                <img src="media/blackkey.png">
+              </a>
+  </div>
+      <div class = "whitekeys">
+
+              <a onmouseover=""="PianoSound('c')">
+                <img src="media/whitekey.png">
+              </a>
+
+              <a onmouseover="PianoSound('d')">
+                <img src="media/whitekey.png">
+              </a>
+
+              <a onmouseover="PianoSound('f1')">
+                <img src="media/whitekey.png">
+              </a>
+
+              <a onmouseover="PianoSound('g1')">
+                <img src="media/whitekey.png">
+              </a>
+
+              <a onmouseover="PianoSound('g')">
+                <img src="media/whitekey.png">
+              </a>
+
+              <a onmouseover="PianoSound('a')">
+                <img src="media/whitekey.png">
+              </a>
+
+              <a onmouseover="PianoSound('b')">
+                <img src="media/whitekey.png">
+              </a>
+
+              <a onmouseover="PianoSound('c3')">
+                <img src="media/whitekey.png">
+              </a>
+    </div>
+
+    <script>
+        var cAudio = new Audio("sfx/c-3.mp3");
+        var c1Audio = new Audio("sfx/c3.mp3");
+        var c2Audio = new Audio("sfx/c4.mp3");
+        var c3Audio = new Audio("sfx/c-4.mp3");
+        var dAudio = new Audio("sfx/d-3.mp3");
+        var d1Audio = new Audio("sfx/d3.mp3");
+        var eAudio = new Audio("sfx/e3.mp3");
+        var fAudio = new Audio("sfx/f-3.mp3");
+        var f1Audio = new Audio("sfx/f3.mp3");
+        var gAudio = new Audio("sfx/g-3.mp3");
+        var g1Audio = new Audio("sfx/g3.mp3");
+        var aAudio = new Audio("sfx/a-3.mp3");
+        var a1Audio = new Audio("sfx/a3.mp3");
+        var bAudio = new Audio("sfx/b3.mp3");
+
+        function PianoSound(letter) {
+            if(letter == 'c') {
+                cAudio.play();
+            } else if(letter == 'c1') {
+                c1Audio.play();
+            } else if (letter == 'c2') {
+              c2Audio.play();
+            } else if(letter == 'c3') {
+                c3Audio.play();
+            } else if (letter == 'd') {
+              dAudio.play();
+            } else if(letter == 'd1') {
+                d1Audio.play();
+            } else if (letter == 'e') {
+              eAudio.play();
+            } else if(letter == 'f') {
+                fAudio.play();
+            }   else if (letter == 'f1') {
+              f1Audio.play();
+            } else if(letter == 'g') {
+                gAudio.play();
+            } else if (letter == 'g1') {
+              g1Audio.play();
+            } else if (letter == 'a') {
+              aAudio.play();
+            } else if (letter == 'a1') {
+              a1Audio.play();
+            } else if (letter == 'b') {
+              bAudio.play();
+            }
+        }
+    </script>
+
+  </body>
+</html>

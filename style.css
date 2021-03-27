@@ -1,0 +1,120 @@
+* {
+	font-family: 'DotGothic16', sans-serif;
+	margin: 10px;
+}
+
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+	background: url("media/retro5.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+h1 {
+	color: #ff234b;
+	text-align: center;
+	text-shadow: 2px 2px #7b1629;
+	background-color: rgba(255, 255, 255, 0.7);
+	border: 2px solid black;
+	width: 50%;
+}
+
+h1:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+p {
+	font-size: 20px;
+	color: black;
+	border: 2px solid black;
+	background-color: white;
+}
+
+img {
+	width: 200px;
+	height: auto;
+	border: 2px solid black;
+}
+
+img:hover {
+	width: 210px;
+	height: auto;
+}
+
+.navbar {
+	position: sticky;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+	background-color: rgba(250, 249, 87, 0.6);
+	border: 2px solid black;
+}
+
+
+.navbar a {
+	color: #980fff;
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+	.navbar a:hover {
+		text-shadow: 2px 2px rgb(194, 193, 17);
+	}
+
+	@-webkit-keyframes rotate {
+	    from { -webkit-transform: rotate(0deg); }
+	    to { -webkit-transform: rotate(45deg); }
+	}
+
+	.footer {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		overflow: hidden;
+	}
+
+	.footer img {
+		height: 60px;
+		width: auto;
+		border: none;
+		margin: 0;
+	}
+
+	.footer img:hover {
+		animation: rotate 0.3s ease-in 2 alternate both;
+		filter: brightness(110%);
+		filter: drop-shadow(5px 5px 5px #B8FEE1);
+		transition: all 1s ease-in-out;
+	}
+
+	.blackkeys {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.whitekeys {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.blackkeys img {
+		border: none;
+		width: 100px;
+		margin: 0;
+	}
+
+	.whitekeys img {
+		border: none;
+		width: 100px;
+		margin: 0;
+	}
